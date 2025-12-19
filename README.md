@@ -1,6 +1,6 @@
 # NOAA-PMEL-OME_MetaMag_nad2_v1_qPCR_Protocol_BeBOP
 
-
+[![DOI](https://zenodo.org/badge/1119236008.svg)](https://doi.org/10.5281/zenodo.17991264)
 
 See [NOAA-PMEL-OME_MetaMag_nad2_v1_qPCR_Protocol.md](https://github.com/HanWeinrich/NOAA-PMEL-OME_MetaMag_nad2_v1_qPCR_Protocol_BeBOP/blob/main/NOAA-PMEL-OME_MetaMag_nad2_v1_qPCR_Protocol.md) for detailed protocol.  
 
