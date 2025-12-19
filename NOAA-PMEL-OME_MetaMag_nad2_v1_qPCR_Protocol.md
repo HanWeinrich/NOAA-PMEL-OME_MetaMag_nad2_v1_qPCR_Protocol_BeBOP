@@ -111,7 +111,7 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
-| 1.0.0 | yyyy-mm-dd | Initial release |
+| 1.0.0 | 2025-12-19 | Initial release |
 
 ### Acronyms and Abbreviations
 
