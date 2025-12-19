@@ -50,7 +50,7 @@ commercial_mm: TaqMan Environmental Master Mix 2.0
 custom_mm: qPCR reactions were run in 10 uL reaction volumes, with  2 μL of DNA, 5.0 μL of TaqMan Environmental Master Mix 2.0, 0.9 μL of water, 0.9 μL Target & ICP F/R primer mix (10 µM), 0.2 μL Target & IPC probe mix (10 µM), and 1. µL of IPC E3.
 pcr_dna_vol: 1.0
 pcr_rep: 3
-nucl_acid_amp: (NEEDED)
+nucl_acid_amp: https://doi.org/10.5281/zenodo.17991264
 pcr_cond: denaturation:95_10;annealing:95_0.25;anealing:60_1;45; hold:10_∞
 annealingTemp: 95
 pcr_cycles: 45
