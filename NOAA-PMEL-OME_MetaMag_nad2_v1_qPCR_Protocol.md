@@ -51,11 +51,11 @@ custom_mm: qPCR reactions were run in 10 uL reaction volumes, with  2 μL of DNA
 pcr_dna_vol: 1.0
 pcr_rep: 3
 nucl_acid_amp: https://doi.org/10.5281/zenodo.17991264
-pcr_cond: denaturation:95_10;annealing:95_0.25;anealing:60_1;45; hold:10_∞
+pcr_cond: denaturation:95_10;annealing:95_0.25;anealing:60_1;45
 annealingTemp: 95
 pcr_cycles: 45
 pcr_analysis_software: R | Quantstudio Design & Analysis 1 Software
-pcr_method_additional: Not Applicable
+pcr_method_additional: not applicable
 ---
 
 # NOAA-PMEL-OME-MetaMag_nad2_v1_qPCR_Protocol_BeBOP
@@ -82,8 +82,8 @@ pcr_method_additional: Not Applicable
 
 | PREPARED BY   | AFFILIATION   | ORCID         | DATE          |
 | ------------- | ------------- | ------------- | ------------- |
-| Dwan Jackson  | Content Cell  |0009-0004-3911-2381 | 2025-08-27    |
-| Han Weinrich  | Ocean Molecular Ecology, NOAA PMEL  | 0009-0007-6063-0986  | 2025-10-01    |
+| Dwan Jackson  | Jackson State University, NOAA CCME-II  |0009-0004-3911-2381 | 2025-08-27    |
+| Han Weinrich  | Ocean Molecular Ecology, NOAA PMEL & UW CICOES | 0009-0007-6063-0986  | 2025-10-01    |
 | Zachary Gold  | Ocean Molecular Ecology, NOAA PMEL  | 0000-0003-0490-7630  | 2025-12-10    |
 
 ### Related Protocols
@@ -97,9 +97,9 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 
 | PROTOCOL NAME | LINK         | VERSION      | RELEASE DATE | INTERNAL/EXTERNAL |
 | ------------- | ------------ | ------------ | ------------ | ----------------- |
-| NOAA PMEL OME eDNA Collection Protocol with Sterivex and Peristaltic Pump | https://doi.org/10.5281/zenodo.17655027 | v1.1.1 | 2025-11-19   | Internal      |
-| NOAA PMEL OME eDNA Collection Protocol with Sterivex and Gravity Filtration  | https://zenodo.org/records/17807045 | v1.1.0 | 2025/12/03   | Internal      |
-| NOAA PMEL OME Extraction Protocol for Sterivex Using a Centrifuge  | https://doi.org/10.5281/zenodo.17655148 | v1.1.4 | 2025/11/20   | Internal      |
+| NOAA PMEL OME eDNA Collection Protocol with Sterivex and Peristaltic Pump | https://doi.org/10.5281/zenodo.17655027 | 1.1.1 | 2025-11-19   | Internal      |
+| NOAA PMEL OME eDNA Collection Protocol with Sterivex and Gravity Filtration  | https://zenodo.org/records/17807045 | 1.1.0 | 2025-12-03   | Internal      |
+| NOAA PMEL OME Extraction Protocol for Sterivex Using a Centrifuge  | https://doi.org/10.5281/zenodo.17655148 | 1.1.4 | 2025-11-20   | Internal      |
 
 
 
@@ -118,14 +118,16 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 | ACRONYM / ABBREVIATION | DEFINITION |
 | ------------- | ------------- |
 | BSC | Biosafety Cabinet |
+| CCME-II | NOAA Center for Coastal & Marine Ecosystems-II 
 | CICOES | Cooperative Institute for Climate, Ocean, & Ecosystem Studies |
+| DNA | Deoxyribonucleic Acid|
 | EB  | Elution Buffer  |
-| eDNA | Environmental Deoxyribonucleic Acid |
+| eDNA | environmental Deoxyribonucleic Acid |
 | EMM   | Environmental Master Mix  |
 | EtOH | Ethanol |
 | IDT | Ingtegrated DNA Technologies |
 | IPC  | Internal Positive Control  |
-| MetaMag | *Metacarcinus magister* abbreviation |
+| MetaMag | *Metacarcinus magister* |
 | MM | Master Mix  |
 | Moa | *Dinornis novaezealandiae* |
 | nad2 | NADH dehydrogenase 2  |
@@ -143,19 +145,19 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 
 | SPECIALISED TERM | DEFINITION |
 | ------------- | ------------- |
-|Ex (x = 0, 0.7, 1, 5, etc.)| Scientific notation of an exponent expressed as E to the power of x. This is used as a short hand to denote the concentration of a primer, probe or other biological molecule in a solution, in this protocol the units are copies per microliter. For example, E3 would be 10^3 or 1000 copies per microliter (µL).
-| Extraction Blank | Extraction negative control. Nuclease-free water or an empty filter is run through the DNA extraction process to control for contamination in the DNA extraction step. |
+|E (E0, E0.7, E1, E5, etc.)| Scientific notation of an exponent expressed as E to the power of a number (E0 = E<sup>0</sup>). This is used as a short hand to denote the concentration of a primer, probe or other biological molecule in a solution, in this protocol the units are copies per microliter. For example, E3 would be 10<sup>3</sup> or 1000 copies per microliter (µL).
+| Extraction blank  | Extraction negative control. Typically, nuclease-free water or an empty filter is run through the DNA extraction process to control for contamination in the DNA extraction step. |
 | Field Blank  | Sampling negative control. Reverse osmosis water is run through a filter using the same procedure and volume as an eDNA water sample to control for contamination in the field sampling step. |
 |gBlock|Gene fragments sold by Integrated DNA Technologies. These fragments are custom designed. For this assay, we use gBlocks for both the target gene region and the IPC gene region.
 | NTC | qPCR No Template Control. Nuclease-free water is loaded in place of a sample in a qPCR reaction well to control for contamination in the qPCR step. |
 | IPC | qPCR Internal Positive Control. A synthetic DNA strand or non-indigenous DNA extract mixed into the master mix to enable QA/QC of inhibition.  |
-| MOA | *Dinornis novaezealandiae*. (Owen, 1843) Extinct flightless bird native to New Zealand whose DNA sequence is being used as the IPC. GBIF taxon ID : 4852043. https://www.gbif.org/species/4852043 |
+| Moa | *Dinornis novaezealandiae*. (Owen, 1843) Extinct flightless bird native to New Zealand whose DNA sequence is being used as the IPC. GBIF taxon ID : 4852043. https://www.gbif.org/species/4852043 |
 |*Metacarcinus magister*| The assay target organism, Dungeness crab (Dana, 1852). AphiaID 440388. https://www.marinespecies.org/aphia.php?p=taxdetails&id=440388 |
 
 
 ## BACKGROUND
 
-This document describes the required protocol to conduct a Quantitative Polymerase Chain Reaction (qPCR) assay to detect and quantify double-stranded DNA of the NADH dehydrogenase 2 (nad2) gene from Dungeness crab (*Metacarcinus magister*) with an IPC.
+This document describes the required protocol to conduct a Quantitative Polymerase Chain Reaction (qPCR) assay to detect and quantify double-stranded DNA of the NADH dehydrogenase 2 (nad2) gene from Dungeness crab (*Metacarcinus magister*) with an Internal Positive Control (IPC).
 
 This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.org/10.1371/journal.pone.0257773  and the Applied Biosystems [TaqMan® Environmental Master Mix 2.0 Real-time PCR Master Mix for inhibited samples Protocol](https://documents.thermofisher.com/TFS-Assets/LSG/manuals/cms_079133.pdf)
 
@@ -165,24 +167,24 @@ The [gBlock dilution procedure](https://docs.google.com/spreadsheets/d/11lvE3BZ3
 
 ### Summary
 
-This protocol describes the steps for performing a qPCR assay on DNA extracted tissue or environmental DNA samples  for the amplification of *Metacarcinus magister*.
+This protocol describes the steps for performing a qPCR assay on DNA extracted tissue or environmental DNA samples  for the amplification of *M. magister*.
 
 
 ### Method Description and Rationale
 
-This protocol describes the reagent preparation, setup and qPCR amplification of a 384 sample well plate on a QuantStudio 5 qPCR machine. The analysis being run is an assay to detect the target organism *Metacarcinus magister* in extracted environmental DNA samples from seawater or ethanol aliquoted from preserved jars of plankton. Post-amplification data can be used to assess the presence and abundance of *Metacarcinus magister* in an eDNA sample. 
+This protocol describes the reagent preparation, setup, and qPCR amplification of a 384 sample well plate on a QuantStudio 5 qPCR machine. The analysis being run is an assay to detect the target organism *M. magister* in extracted environmental DNA samples from seawater or ethanol aliquoted from preserved jars of plankton. Post-amplification data can be used to assess the presence and abundance of *M. magister* in an eDNA sample. 
 
 ### Spatial Coverage and Environment(s) of Relevance
 
-This protocol has been used as an eDNA assay to test for the presence and abundance of *Metacarcinus magister* in seawater and the ethanol preservative from net tow and light trap cod end samples taken from coastal stations off the western coast of North America in the Northeastern Pacific Ocean (primarily off California, Oregon, Washington, and Alaska). 
+This protocol has been used as an eDNA assay to test for the presence and abundance of *M. magister* in seawater and the ethanol preservative from preserved jars of plankton collected via net tow from coastal stations off the western coast of North America in the Northeastern Pacific Ocean (primarily off California, Oregon, Washington, and Alaska). 
 
-## PERSONNEL REQUIRED
+## Personnel Required
 
 One person with molecular biology experience. We note a second person can be helpful when loading a complexly oriented plate.
 
 ### Safety
 
-This protocol does not involve any hazardous chemicals, although standard precautions, including wearing PPE, should be taken to avoid skin and eye exposure to chemical reagents.
+This protocol uses bleach and ethanol, both of which are classified as hazardous chemicals. Appropriate PPE must be worn, and standard safety procedures should be followed to avoid skin and eye exposure.
 
 ### Training Requirements
 
@@ -190,11 +192,10 @@ Molecular biology training (including, at minimum, sterile technique, pipetting 
 
 ### Time Needed to Execute the Procedure
 
-qPCR preparation and running the protocol for a single 384 well plate takes 0.75 to 4.5 hours (144-270 minutes), of which 99 minutes is the QuantStudio 5 qPCR machine run time. Length in loading is contigent on complexity of the plate layout and use of a multichannel pipette.
+qPCR preparation and running the protocol for a single 384 well plate takes 1.75 to 4.5 hours (105-270 minutes), of which 99 minutes is the QuantStudio 5 qPCR machine run time. Length in loading is contigent on complexity of the plate layout and use of a multichannel pipette.
 
 ## EQUIPMENT
 
-- Opentrons Consumables: If using Opentrons OT-2 Robot for KF Plate Prep.
 - Description: E.g., "filter".
 - Product Name and Model: Provide the official name of the product.
 - Manufacturer: Provide the name of the manufacturer of the product.
@@ -206,27 +207,27 @@ For a 384-well Plate:
 | DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | **Durable equipment** |
-| Voyager Adjustable tip spacing Pipetter: 0.5-12.5 μl | 	Voyager 12 Tip | Integra Biosciences | 1 | Can be substituted with any accurate multichannel pipettor |
+| Voyager Adjustable tip spacing pipetter: 0.5-12.5 μl | 	Voyager 12 Tip | Integra Biosciences | 1 | Can be substituted with any accurate multichannel pipettor |
 | Pipetter: 1-10 μl | 	Pipetman P10L | Gilson | 1 | Can be substituted with any accurate pipettor |
 | Pipetter: 10 - 100 μL | Pipetman P100L | Gilson | 1 | Can be substituted with any accurate pipettor |
 | Pipetter: 20 - 200 μL | Pipetman P200L | Gilson | 1 | Can be substituted with any accurate pipettor |
 | Pipetter: 100-1000 μL | Pipetman P1000 | Gilson | 1 | Can be substituted with any accurate pipettor |
-|BioSafety Cabinet  | BioSafety II Cabinet| Kewaunee | 1 | Can be substituted with generic - internal UV light required |
-| qPCR Machine | QuantStudio 5 Real-Time PCR System | Applied Biosystems | 1 | Can be substituted with generic, but needs to have 384 well adaptor. |
+|BioSafety II cabinet  | Biological safety cabinet (INT-1100A2)| Kewaunee | 1 | Can be substituted with generic - internal UV light required |
+| qPCR machine | QuantStudio 5 Real-Time PCR System | Applied Biosystems | 1 | Can be substituted with generic, but needs to have 384 well adaptor. |
 | Mini-centrifuge | Personal mini centrifuge | BioExcell | 1 | Can be substituted with generic, but needs to fit 1.5-2.0 mL tubes |
 | Vortex | Analog vortex mixer | Fisher Scientific | 1 | Can be substituted with generic |
 | Centrifuge with plate attachment | Centrifuge 5810 R | Eppendorf | 1 | Can be substituted with generic, must be able to fit 384 well plates |
 | Film applicator | MicroAmp Adhesive Film Applicator | Applied Biosystems | 1 | Can be substituted with generic |
 | 2 ml tube rack | Microcentrifuge tube rack | VWR | 2 | Can be substituted with generic, must hold 1.5 and 2 mL tubes |
 | 0.2 mL PCR plate rack | PCR tube rack for  | Fisher Scientific | 1 | Can be substituted with generic, must be able to fit 0.2 mL micro-tubes and semi-skirted PCR plates |
-| Wash Bottle | Safety Wash Bottle for Ethanol 500mL | VWR | 1 | Can be substituted with generic - must be sterilized before use |
-| Wash Bottle | Safety Wash Bottle for Hypochlorite Bleach 500mL | VWR | 1 | Can be substituted with generic - must be sterilized before use |
+| Wash bottle | Safety Wash Bottle for Ethanol 500mL | VWR | 1 | Can be substituted with generic - must be sterilized before use |
+| Wash bottle | Safety Wash Bottle for Hypochlorite Bleach 500mL | VWR | 1 | Can be substituted with generic - must be sterilized before use |
 | Freezer | Freezer capable of reaching and maintaining -20°C | Generic | 1 | Used to store DNA and qPCR reagents **NOTE: A separate freezer should be used to store qPCR products from pre-amplification samples and reagents if possible.** |
 | Fridge | Refrigerator capable of reaching and maintaining 4°C | Generic | 1 | Used to store some qPCR reagents **NOTE: A separate fridge should be used to hold PCR products  from pre-amplification samples and reagents if possible.** |
-| Tip Waste Container | Pipette tip waste container | Generic | 1 |Sterilizable container (such as  a plastic cup or graduated 1L beaker) capable of holding waste pipette tips |
+| Tip waste container | Pipette tip waste container | Generic | 1 |Sterilizable container (such as  a plastic cup or graduated 1L beaker) capable of holding waste pipette tips |
 | Trash Container | Plastic cup/container for trash | Generic | 1 |Container capable of holding any experiment waste in the BSC. Needs to be able to be sterilized. Can be substituted with a trash bag and stand. |
 | **Consumable equipment** |
-| 384 well plate | MicroAmp Optical 384-Well Reaction Plate with Barcode | Applied Biosystems/Thermo Fisher | 1 | Can be substituted with generic. Shield from **long-term UV exposure** to prevent yellowing (therefore damaging optical properties) |
+| 384 well plate | MicroAmp Optical 384-Well Reaction Plate with Barcode | Applied Biosystems/Thermo Fisher | 1 | Can be substituted with generic. Shield from **UV exposure** to prevent yellowing (therefore damaging optical properties) |
 | 96 well plate | Twin.tec LoBind PCR plates, semi-skirted (96-wells) | Eppendorf | 1 | Can be substituted with generic - must be DNA low retention |
 | 1000 μL pipette tips | TipOne RPT filter tips 1000 μL XL graduated | USA Scientific | 34 | Can be substituted with generic - must be sterile and filtered |
 | 200 μL pipette tips | TipOne RPT filter tips 200 μL graduated | USA Scientific | 11 | Can be substituted with generic - must be sterile and filtered |
@@ -243,11 +244,11 @@ For a 384-well Plate:
 |96 well plate | Twin.tec LoBind PCR plates, semi-skirted (96-wells)| Eppendorf | 1 | Can be substituted with generic - must be DNA low retention |
 |8 well tube strips|Eppendorf 0.2 mL PCR Tube Strips | Eppendorf| 2| Can be replaced with generic, must be sterile|
 | **Optional equipment** |
-| 8-channel multichannel pipetter: 1-10 μL | Pipetman Multichannel P8X10 | Gilson | 1 | Can be substituted with generic. Use of this pipette is strongly encouraged to reduce error and increase speed. |
-| Voyager 8-channel adjustable pipette | Voyager 8 channel 0.5-12.5 µl | Integra | 1 | Can be substituted with generic. Use of this pipette is strongly encouraged to reduce error and increase speed. |
+| 8-channel multichannel pipetter: 1-10 μL | Pipetman Multichannel P8X10 | Gilson | 1 | Can be substituted with generic - not required but reduces protocol time and error rate. |
+| Voyager 8-channel adjustable pipette | Voyager 8 channel 0.5-12.5 µl | Integra | 1 | Can be substituted with generic - not required but reduces protocol time and error rate. |
 | 12.5 µl pipette tips | GRIPTIPS sterile, filter 12.5 µl tips | Integra | 392 | Can be substituted with generic - must be sterile and filtered, must fit 8 channel pipette. |
 | **Chemicals** |
-| TaqMan EMM | TaqMan Environmental Master Mix 2.0 | Applied Biosystems | 2000 µl | Store at 4ºC after opening. |
+| TaqMan EMM | TaqMan Environmental Master Mix 2.0 | Applied Biosystems | 2000 µl | Store at 4ºC after opening |
 | Target FWD primer | assay target forward primer, Custom oligo | Integrated DNA Technologies  | 360 µl per plate |Store at -20°C|
 | Target REV primer| assay target forward primer, Custom oligo | Integrated DNA Technologies | 360 µl per plate |Store at -20°C|
 | IPC FWD primer | Internal Positive Control forward primer, Custom oligo | Integrated DNA Technologies | 360 µl per plate |Store at -20°C|
@@ -261,45 +262,46 @@ For a 384-well Plate:
 | Buffer EB | Elution Buffer | Qiagen | 6 ml per standard dilution | Can be subsituted for different elution buffer or TlowE |
 | 70% EtOH | Molecular grade ethanol | Generic | 40 ml |  |
 | 10% Bleach | Hypochlorite Bleach | Clorox | 40 ml | Remake every ~5 days as bleach decomposes quickly at 10% concentration |
+| Nuclease free water | UltraPure DNase/RNase-free distilled water | ThermoFisher | 360 μl per plate|
+
 
 ## STANDARD OPERATING PROCEDURE
 
 
 ### Preparation
 
-**Preparing working stocks of qPCR reagents:**
-- For detailed tables, please see the [qPCR_reagent_prep_sheet](https://docs.google.com/spreadsheets/d/17v_nTtKf2UqTu3SONvjXoswGZbUzHYx2li-hXNyxjyU/edit?gid=0#gid=0)
+- For detailed tables including dilution calculations for all reagents in this section, please see the [qPCR_reagent_prep_sheet](https://docs.google.com/spreadsheets/d/17v_nTtKf2UqTu3SONvjXoswGZbUzHYx2li-hXNyxjyU/edit?gid=0#gid=0)
 
 
-***Preparing the Primer and Probe*:**
+**Preparing the Primer and Probe:**
    
    The working concentrations of primers and probes for both the assay target and the IPC should be prepared ahead of time to improve efficiency. Since the concentrations and proportions of these reagents remain constant across reactions, they can be mixed and stored in combined working solutions. This protocol section describes the process of diluting and creating a **probe mix** (containing the working concentrations of the probes for the IPC and assay target) and the **primer mix** (containing the working concentrations of the FWD and REV primers for the IPC and assay target).
    
    **To create concentrated 100 µM stocks of primers and probes:**
   
-  * Ensure the stocks of forward and reverse primer and probe are each diluted to a concentration of **100 µM** using molecular grade water and undiluted primer or probe (as it arrives from IDT). This is the storage concentration for these reagents. 
-  * For example, if you start with 29.9 nmol of a primer, you will add 299 µL of molecular grade water to the stock tube of primer to make a 100 µM solution.
-* Once a 100 µM solution is created, it needs to be diluted down to a working stock and combined for use in all qPCR master mixes.
+  1. Ensure the stocks of forward and reverse primer and probe are each diluted to a concentration of **100 µM** using molecular grade water and undiluted primer or probe (as it arrives from IDT). This is the storage concentration for these reagents. 
+  2. For example, if you start with 29.9 nmol of a primer, you will add 299 µL of molecular grade water to the stock tube of primer to make a 100 µM solution.
+3. Once a 100 µM solution is created, it needs to be diluted down to a working stock and combined for use in all qPCR master mixes.
 
  **To create the 40 µM intermediate primer solution:**
-* Add 200 µL of a 100 µM primer and 300 µl of Molecular Grade Water to a new and labeled 1.5 mL tube.
-* End volume should be 500 µl at a concentration of 40 µM.
-* Create one for each of the four primers (FWD + REV of target and FWD + REV of IPC)
+1. Add 200 µL of a 100 µM primer and 300 µl of Molecular Grade Water to a new and labeled 1.5 mL tube.
+2. End volume should be 500 µl at a concentration of 40 µM.
+3. Create one for each of the four primers (FWD + REV of target and FWD + REV of IPC)
 
 **To create the 20 µM intermediate probe solution:**
-* To a new and labeled 1.5 mL tube, add 200 µl of 100 µM target probe and 800 µl of molecular grade water
-* End volume and concentration will be 1000 µl of a 20 µM solution. 
-* Repeat for the IPC probe. 
+1. To a new and labeled 1.5 mL tube, add 200 µl of 100 µM target probe and 800 µl of molecular grade water
+2. End volume and concentration will be 1000 µl of a 20 µM solution. 
+3. Repeat for the IPC probe. 
 
 **To create the 10 µM primer mix:**
-* Combine 125 µl of each FWD and REV primer for both the target and IPC primers.
-* End volume will be a 500 µl mixture with each of the four primers at a 10 µM concentration.
+1. Combine 125 µl of each FWD and REV primer for both the target and IPC primers.
+2. End volume will be a 500 µl mixture with each of the four primers at a 10 µM concentration.
 
 
 **To create the 10 µM probe mix:**
-* To a new and labeled tube, add 500 µl of 20 µM target probe and 500 µl of 20 µM IPC probe.
-* End volume and concentration will be 1000 µl of a 10 µM solution.
-* Aliquot out into 4 equal 250 µl solutions.
+1. To a new and labeled tube, add 500 µl of 20 µM target probe and 500 µl of 20 µM IPC probe.
+2. End volume and concentration will be 1000 µl of a 10 µM solution.
+3. Aliquot out into 4 equal 250 µl solutions.
 
 Primer and probe intermediate and working stocks should be stored in the freezer until use.
 
@@ -308,7 +310,7 @@ Primer and probe intermediate and working stocks should be stored in the freezer
 For this protocol, you will be adding a diluted concentration of the IPC gBlock to each well of the reaction plate as a component of your master mix. You will also use a series of dilutions of the assay target gBlock as standards with a known molecule concentration of the target gene region - these will be used to create your standard curve. 
 
 **Please see the document [gBlocks_dilutions_SOP](https://docs.google.com/spreadsheets/d/11lvE3BZ3x0L9oIlTFBza2m31r7gCbM9QQXQOXOF6srs/edit?gid=1533510171#gid=1533510171) for a detailed spreadsheet on dilution calculations for the target and IPC**
-* The spreadsheet provides a calculator for diluting the gBlocks as they arrive from IDT (~E10) to an E6 concentration. **IMPORTANT NOTE:** We have found that E6 concentrations (10^6 copies per µL) can be stored in the freezer and used as a baseline stock to make your standard curve series or IPC for up to 6 months, depending on the number of freeze thaw cycles. New dilutions at concentrations below E6 should be made **AT LEAST** weekly.
+* The spreadsheet provides a calculator for diluting the gBlocks as they arrive from IDT (~E10) to an E6 concentration. **IMPORTANT NOTE:** We have found that E6 concentrations (10<sup>6</sup> copies per µL) can be stored in the freezer and used as a baseline stock to make your standard curve series or IPC for up to 6 months, depending on the number of freeze thaw cycles. New dilutions at concentrations below E6 should be made **AT LEAST** weekly.
 
 *  Be sure to version each dilution of assay target  and IPC when they are recreated weekly (V1, V2, etc.) to record the performance of each batch.
 *   For the IPC, you will only need to make down to E3 (1000 copies per microliter) for inclusion in master mix.
@@ -405,10 +407,11 @@ This table breaks down the mixture per plate and per reaction. When running full
 
 | qPCR Step | Temperature | Duration | Repetition |
 | ----- | ----- | ----- | ----- |
-| Denaturation | 95 | 10 min | 1 |
-| Annealing | 95 | 15 s | x 45 |
-| Annealing | 60 | 1 min | x 45 |
-| Hold | 10 | ∞ | 1 |
+| Initial Denaturation | 95°C | 10 min | x 1 |
+|**Normal Cycling**||||
+| Denaturation | 95°C | 15 s | x 45 |
+| Annealing | 60°C | 1 min | x 45 |
+| Hold | 10 | ∞ |  x 1 |
 
 
 **Pre-qPCR Loading Prep:**
@@ -482,7 +485,7 @@ NOTE: When loading your qPCR plate, **take care to not contaminate** unknown (en
 
 Please specify the actions you took to confirm the quality of the PCR output, to clean up the PCR output and the equipment you used (e.g. agarose gel to confirm quality, purification of PCR products).
 
-**Standard curve**: A set of dilutions of a known concentration of the target gene gBlock are added to each qPCR plate. At least three E5 to E0.7 standards and six E0 standards are recommended. For determining limit of detection (LoD) and limit of quantification (LoQ) at least 12 replicates of each standard are recommended. The amplification measurements of these wells are compared to the unknown samples to evaluate the concentration of target in each sample. A high R^2 value of the standard curve indicates that the relationship between target molecule concentration and amplification is direct and quantifiable.
+**Standard curve**: A set of dilutions of a known concentration of the target gene gBlock are added to each qPCR plate. At least three E5 to E0.7 standards and six E0 standards are recommended. For determining limit of detection (LoD) and limit of quantification (LoQ) at least 12 replicates of each standard are recommended. The amplification measurements of these wells are compared to the unknown samples to evaluate the concentration of target in each sample. A high R<sup>2</sup> value of the standard curve indicates that the relationship between target molecule concentration and amplification is direct and quantifiable.
 
 #### Internal Positive Control
 
@@ -503,10 +506,10 @@ Solution 1:
 * Absence or late amplification (high Ct) of Moa can indicate inhibition - dilute your unknown sample before adding or clean DNA extracts with a commercial clean up kit.
 * Improper mixing of master mix can result in variations in reagent concentration across a plate - ensure all reagents and the final master mix is well mixed before aliquoting to reaction plate.
 
-Issue 2: The R^2 value for the standard curve is low (below 98)
+Issue 2: The R<sup>2</sup> value for the standard curve is low (below 98)
 
 Solution 2:
-* Low R^2 can be caused by inconsistent amplification of standards - this can arise from pipetting error or innacurately calculated concentrations of standard DNA in each dilution. First, rerun plate with the standards as diluted. If low R^2 is still observed, remake standard dilution series from scratch and rerun again.
+* Low R<sup>2</sup> can be caused by inconsistent amplification of standards - this can arise from pipetting error or innacurately calculated concentrations of standard DNA in each dilution. First, rerun plate with the standards as diluted. If low R<sup>2</sup> is still observed, remake standard dilution series from scratch and rerun again.
 
 
 Issue 3: Low amplification efficiency of standards
