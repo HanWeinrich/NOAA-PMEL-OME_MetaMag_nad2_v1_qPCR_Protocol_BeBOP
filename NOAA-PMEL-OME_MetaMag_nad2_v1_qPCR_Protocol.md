@@ -15,10 +15,10 @@ skills_required: sterile technique, pipetting skills, standard molecular techniq
 time_required: 270
 personnel_required: 1
 language: en
-issued: 2025-12-19
+issued: 2026-01-30
 audience: scientists
 publisher: NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Group; University of Washington Cooperative Institute for Climate, Ocean, & Ecosystem Studies
-hasVersion: 1.0.0
+hasVersion: 1.0.1
 license: CC0 1.0 Universal
 maturity level: Concept
 
@@ -112,6 +112,8 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2025-12-19 | Initial release |
+| 1.0.1 | 2026-01-30 | Corrected typos, grammar, improved clarity. This version was used for the development of the MetaMag_nad2_v1 assay. |
+
 
 ### Acronyms and Abbreviations
 
@@ -153,6 +155,7 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 | IPC | qPCR Internal Positive Control. A synthetic DNA strand or non-indigenous DNA extract mixed into the master mix to enable QA/QC of inhibition.  |
 | Moa | *Dinornis novaezealandiae*. (Owen, 1843) Extinct flightless bird native to New Zealand whose DNA sequence is being used as the IPC. GBIF taxon ID : 4852043. https://www.gbif.org/species/4852043 |
 |*Metacarcinus magister*| The assay target organism, Dungeness crab (Dana, 1852). AphiaID 440388. https://www.marinespecies.org/aphia.php?p=taxdetails&id=440388 |
+|Unknown| Samples of extacted DNA from an ecosystem, organism tissue, or other DNA source that may contain your assay target species and gene. Does not include standard curve gBlocks or positive controls.|
 
 
 ## BACKGROUND
@@ -277,7 +280,7 @@ For a 384-well Plate:
    
    The working concentrations of primers and probes for both the assay target and the IPC should be prepared ahead of time to improve efficiency. Since the concentrations and proportions of these reagents remain constant across reactions, they can be mixed and stored in combined working solutions. This protocol section describes the process of diluting and creating a **probe mix** (containing the working concentrations of the probes for the IPC and assay target) and the **primer mix** (containing the working concentrations of the FWD and REV primers for the IPC and assay target).
    
-   **To create concentrated 100 µM stocks of primers and probes:**
+**To create concentrated 100 µM stocks of primers and probes:**
   
 1. Ensure the stocks of forward and reverse primer and probe are each diluted to a concentration of **100 µM** using molecular grade water and undiluted primer or probe (as it arrives from IDT). This is the storage concentration for these reagents. 
 2. For example, if you start with 29.9 nmol of a primer, you will add 299 µL of molecular grade water to the stock tube of primer to make a 100 µM solution.
@@ -296,7 +299,6 @@ For a 384-well Plate:
 **To create the 10 µM primer mix:**
 1. Combine 125 µl of each FWD and REV primer for both the target and IPC primers.
 2. End volume will be a 500 µl mixture with each of the four primers at a 10 µM concentration.
-
 
 **To create the 10 µM probe mix:**
 1. To a new and labeled tube, add 500 µl of 20 µM target probe and 500 µl of 20 µM IPC probe.
@@ -341,40 +343,39 @@ For this protocol, you will be adding a diluted concentration of the IPC gBlock 
     * 1,000 µL total volume
 
 **Standard Curve Dilution Series**
-*   To make the standard curve series of target gBlock dilutions **(these need to be remade weekly and stored a 4 degrees C)**:
+*   To make the standard curve series of target gBlock dilutions **(these need to be remade weekly and stored a 4°C)**:
 
-    | Copies | Concentration | Recipe |
+    | Copies/µL | Concentration | Recipe |
     | ----- | ----- | ----- |
-    | 100,000 | E5 | 100 µL of E6 + 900 µL Elution (EB) Buffer |
-    | 10,000 | E4 | 100 µL of E5 + 900 µL Elution (EB) Buffer |
-    | 1,000 | E3 | 100 µL of E4 + 900 µL Elution (EB) Buffer |
-    | 100 | E2 | 100 µL of E3 + 900 µL Elution (EB) Buffer |
-    | 10 | E1 | 100 µL of E2 + 900 µL Elution (EB) Buffer |
-    | 5 | E0.7 |500 µL of E1 + 500 µL Elution (EB) Buffer |
-    | 1 | E0 |100 µL of E1 + 900 µL Elution (EB) Buffer |
+    | 100,000 | E5 | 100 µL of E6 + 900 µL EB |
+    | 10,000 | E4 | 100 µL of E5 + 900 µL EB |
+    | 1,000 | E3 | 100 µL of E4 + 900 µL EB |
+    | 100 | E2 | 100 µL of E3 + 900 µL EB |
+    | 10 | E1 | 100 µL of E2 + 900 µL EB |
+    | 5 | E0.7 |500 µL of E1 + 500 µL EB |
+    | 1 | E0 |100 µL of E1 + 900 µL EB |
     
 **IPC Dilution Series**
-*   To make the standard curve series of target gBlock dilutions **(these need to be remade weekly and stored a 4 degrees C)**:
+*   To make the standard curve series of target gBlock dilutions **(these need to be remade weekly and stored a 4°C)**:
 
-    | Copies | Concentration | Recipe |
+    | Copies/µL | Concentration | Recipe |
     | ----- | ----- | ----- |
-    | 100,000 | E5 | 100 µL of E6 + 900 µL Elution (EB) Buffer |
-    | 10,000 | E4 | 100 µL of E5 + 900 µL Elution (EB) Buffer |
-    | 1,000 | E3 | 100 µL of E4 + 900 µL 
+    | 100,000 | E5 | 100 µL of E6 + 900 µL EB |
+    | 10,000 | E4 | 100 µL of E5 + 900 µL EB |
+    | 1,000 | E3 | 100 µL of E4 + 900 µL EB|
 
 **After preparing gBlock dilutions:**
 - After creation of standards containing the target gene sequence (your gBlocks), you will need to sterilize ALL equipment and surfaces used before working with unknown target samples and/or setting up a new plate of qPCR.
 - Cleaning:
-    - Dispose of trash and tips.
-    - Use 10% bleach and 70% ethanol on surfaces, pipettes, tube racks, and tip & trash containers.
-    - Ethanol wipe pipette tip boxes.
-    - Sterilize pipettes, tube racks, boxes, and tip & trash containers in the UV box or under the BSC UV light.
-    - Run BSC UV for 30 minutes to sterilize the BSC surfaces.
+  1. Dispose of trash and tips.
+  2. Use 10% bleach and 70% ethanol on surfaces, pipettes, tube racks, and tip & trash containers.
+  3. Ethanol wipe pipette tip boxes.
+  4. Sterilize pipettes, tube racks, boxes, and tip & trash containers in the UV box or under the BSC UV light.
+  5. Run BSC UV for 30 minutes to sterilize the BSC surfaces.
 
 
 ### Running qPCR
 
-Please specify the actions you took to amplify the previously extracted DNA and the equipment and primers you used (ingredients for the PCR reaction, number of triplicates, qPCR cycle parameter)
 
 **Primers, Probes, & gBlock for target & IPC**: qPCR primer sequences
 
@@ -392,9 +393,9 @@ Please specify the actions you took to amplify the previously extracted DNA and 
 
 **Reaction Mixture**: qPCR reagents, volumes, initial and final concentrations
 
-| Reagent | Volume (µl) per plate | Volume (µl) per reaction | Initial Concentration | final concentration|
+| Reagent | Volume (µl) per plate | Volume (µl) per reaction | Initial Concentration | Final concentration|
 | ----- | ----- | ----- | ----- | ----- |
-| Water | 360 | 0.9 | N/A | N/A |
+| Molecular grade water | 360 | 0.9 | N/A | N/A |
 | TaqMan EMM 2.0 | 2000 | 5.0 | 2x |1x |
 | Target & IPC F/R primer mix | 360 | 0.9 | 10 µM |0.9 µM |
 | Target & IPC Probe mix | 80 | 0.2 | 10 µM |0.2 µM |
@@ -407,51 +408,50 @@ This table breaks down the mixture per plate and per reaction. When running full
 
 | qPCR Step | Temperature | Duration | Repetition |
 | ----- | ----- | ----- | ----- |
-| Initial Denaturation | 95°C | 10 min | x 1 |
+| Initial Denaturation | 95°C | 10 min | x1 |
 |**Normal Cycling**||||
-| Denaturation | 95°C | 15 s | x 45 |
-| Annealing | 60°C | 1 min | x 45 |
-| Hold | 10 | ∞ |  x 1 |
+| Denaturation | 95°C | 15 s | 45x |
+| Annealing | 60°C | 1 min | 45x |
+| Hold | 10 | ∞ |  x1 |
 
 
 **Pre-qPCR Loading Prep:**
 
 - Ensure that BSC, pipettes and tube racks are cleaned and sterilized, and UV has been run before starting (and that **NO** assay target standards have been handled in the workspace post-sterilization).
     - If unsure, run BSC UV for 30 mins before starting.
-- Prepare your plate map. Ensure all samples and standards are included along with calculated volumes of each reagent used in master mix.  
-    -  [qPCR_plate_template_Sheet](https://docs.google.com/spreadsheets/d/1ukRsc_t9YWFYkq1ENnafxu4LBEzS9CTxfC2B7mDExac/edit?gid=292159116#gid=292159116) can be used for reagent calculations.
-    - Always check to make sure sufficient volumes of working stock reagents are present before beginning plate setup. Prepare more  working stocks if not enough are premade for run.
-    - Print plate map and reagent calculations for reference and manual plate map alterations.
-    - Input finalized plate map onto the QuantStudio 5 instrument with samples, standards, negatives, and the probe targets. 
+- Prepare the plate map. Ensure all samples and standards are included along with calculated volumes of each reagent used in master mix.  
+   1.   [qPCR_plate_template_Sheet](https://docs.google.com/spreadsheets/d/1ukRsc_t9YWFYkq1ENnafxu4LBEzS9CTxfC2B7mDExac/edit?gid=292159116#gid=292159116) can be used for reagent calculations.
+   2. Ensure you have sufficent volumes of working stock reagents. Prepare more working stocks if not enough are premade for run.
+   3. Print plate map and reagent calculations for reference and manual plate map alterations.
+   4. Input finalized plate map onto the QuantStudio 5 instrument with samples, standards, negatives, and the probe targets. 
         - Ensure protocol for run is set on the machine.
-        - For post-run processing consistency, refer to the internal [ qPCR Controlled Vocabulary](https://docs.google.com/spreadsheets/d/1ifvyaRQVqmDaxNhM37npbPasktJANBbN9FMudXl8XL4/edit?gid=0#gid=0) for naming conventions
-- Pull probe and primer mix working stocks from the freezer to thaw in the BSC.
-- Prelabel a 5 mL tube for master mix.
-- Ensure 384 well plates, optical film, integra 12.5 µL tips (or your tips) and 8 well tube strips are in the BSC.
-- If you are running more than a few (>20) samples, it is easiest to aliquot samples into a 96 well plate or set of 8 well strip tubes to make loading with the multichannel pipette possible and greatly reducing error. Ensure that you clean the hood and instruments after this step before preparing master mix.
-- If using the Integra Voyager multichannel pipette, ensure it is charged and clean.
+        - For post-run processing consistency, refer to the internal [ qPCR Controlled Vocabulary](https://docs.google.com/spreadsheets/d/1ifvyaRQVqmDaxNhM37npbPasktJANBbN9FMudXl8XL4/edit?gid=0#gid=0) for naming conventions.
+   5. Pull probe and primer mix working stocks from the freezer to thaw in the BSC.
+   6. Prelabel a 5 mL tube for master mix.
+   7. Ensure 384 well plates, optical film, integra 12.5 µL tips (or your tips) and 8 well tube strips are in the BSC.
+   8. If you are running more than a few (>20) samples, it is easiest to aliquot samples into a 96 well plate or set of 8 well strip tubes to make loading with the multichannel pipette possible and greatly reducing error. Ensure that you clean the hood and instruments after this step before preparing master mix.
+   9. If using the Integra Voyager multichannel pipette, ensure it is charged and clean.
 
 
-NOTE: When loading your qPCR plate, **take care to not contaminate** unknown (environmental or tissue) samples or standards that may contain the assay target gene. For example, keep unknown samples and standards in fridge, until after your master mix is made and aliquoted onto your plate(s).
+NOTE: When loading the qPCR plate, **take care to not contaminate** unknown (environmental or tissue) samples or standards that may contain the assay target gene. For example, keep unknown samples and standards in fridge, until after your master mix is made and aliquoted onto the plate(s).
 
 
 **Making The Master Mix**
 
-1. To your labeled 5 mL tube, add molecular grade water, TaqMan EMM, 10 µM primer pool, 10 µM probe pool, and IPC gBlock at E3 concentration in amounts determined by the reaction mixture table or reagent calculations on your qPCR plate sheet. Ensure that all reagents **except** the TaqMan EMM are vortexed thoroughly before adding. EMM should be inverted 5-10x while flicking. Mix your newly made master mix well before using.
-2. Using a 200 µl pipette, aliquot your master mix into an 8-well strip tube (volume in each well will depend on how many samples you are running).
+1. To a labeled 5 mL tube, add molecular grade water, TaqMan EMM, 10 µM primer pool, 10 µM probe pool, and IPC gBlock at E3 concentration in amounts determined by the reaction mixture table or reagent calculations on your [qPCR plate sheet](https://docs.google.com/spreadsheets/d/17v_nTtKf2UqTu3SONvjXoswGZbUzHYx2li-hXNyxjyU/edit?gid=0#gid=0). Ensure that all reagents **except** the TaqMan EMM are vortexed thoroughly before adding. EMM should be inverted 5-10x while flicking. Mix your newly made master mix well before using.
+2. Using a 200 µl pipette, aliquot your master mix into an 8-well strip tube (volume in each well is dependent on sample number).
 3. Grab a fresh 384 well plate. Be sure to orient it properly with the cut off corner at the top (so that the well numbers match your plate map). Ensure you do not touch the top or bottom of the plate and that it only comes into contact with clean, particle free surfaces as particles can compromise its optical properties.
 4. Using a multi-channel pipette or Integra Voyager, load wells with 8 µl master mix each based on plate map. The same tips can be used for the entire plate as long as they remain clean and free of bubbles.
     - If using voyager pipette:
         - Use repeat pipetting setting to aspirate 9 µl, dispense 8 µl, and leave 1 µl in tips (post-dispense). Purge post-dispense volume in tips back into the master mix in the tube strips (do not discard) unless contaminated. Otherwise you will run out of master mix for your plate by wasting the post-dispense volume.
         - Use 13 mm spacing setting for aspirating (strip tube) and use 4 mm for dispensing (384 well plate).
         - If tips create bubbles, dispose of tips and get a new set.
-         - Load batches of fewer than 8 samples with either fewer tips or a single channel pipette.
+        - Load batches of fewer than 8 samples with either fewer tips or a single channel pipette.
 
 **Loading Unknowns and Standards**
-          
-1. Put away your master mix ingredients before pulling out your unknown samples. **Do not** yet pull out your assay target standard gBlock dilution series.
-2. Thaw, vortex and spin down your unknown samples. 
-3.  Load 2 µl of unknown in each unknown sample well according to the plate map.
+*Put away your master mix ingredients before pulling out your unknown samples. **Do not** yet pull out your assay target standard gBlock dilution series.
+1. Thaw, vortex and spin down your unknown samples. 
+2.  Load 2 µl of sample in each unknown sample well according to the plate map.
 * Highly recommended to use a multichannel pipette to load.
     - If using voyager pipette:
         - Use repeat pipetting setting to aspirate 7 µl, dispense 2 µl, and leave 1 µl or 0.5 µl in tips (post dispense). Set this to repeat 3 times before purging (to fill all three wells of your triplicates).
@@ -460,41 +460,37 @@ NOTE: When loading your qPCR plate, **take care to not contaminate** unknown (en
         - Load batches of fewer than 8 samples with either fewer tips or a single channel pipette.
         - Be sure to discard tips between samples (but not between replicates of the same sample unless tips are otherwise compromised).
 
-4. Once samples are loaded, load the NTC wells with 2 µl of molecular grade water.
-5.  Remove all samples from the BSC to prevent cross contamination.
-6.    Now you can take your gBlock target standards out of the fridge and place in the BSC.
-7.    Using a 200 µl pipette, aliquot your standard dilution series (1 of each of E5, E4, E3, E2, E1, E0.7, E0, E0) into an 8 well strip tube. 2 wells will be dedicated to the E0 concentration, as you want twice as many E0 as higher concentration standards to reduce stochastic error. **Minimum of 3x E5 to E0.7 standards and 6x E0 standards recommended**.
-8.    Load all standards using the multichannel to reduce pipetting error.
+3. Once samples are loaded, load the NTC wells with 2 µl of molecular grade water.
+4.  Remove all samples from the BSC to prevent cross contamination.
+5.    Now you can take your gBlock target standards out of the fridge and place in the BSC.
+6.    Using a 200 µl pipette, aliquot your standard dilution series (1 of each of E5, E4, E3, E2, E1, E0.7, E0, E0) into an 8 well strip tube. 2 wells will be dedicated to the E0 concentration, as you want twice as many E0 as higher concentration standards to reduce stochastic error. **Minimum of 3x E5 to E0.7 standards and 6x E0 standards recommended**.
+7.    Load all standards using the multichannel to reduce pipetting error.
     * If using voyager pipette (for a max of 6 replicates at a time):
     - Use repeat pipetting setting to aspirate 12.5 µl, dispense 2 µl, and leave 0.5 µl in tips.
     - Use 13 mm setting for aspirating, and use 4 mm for dispensing 
         - If tips keep causing bubbles, dispose of tips and get a new set.
         Load smaller sets or single wells with a 10 µl single channel pipette or pick up fewer tips with the Integra Voyager.
         - Be sure to discard tips between standards.
-9. Place optical film over the plate.
-19. Use film applicator to press film on firmly and seal the sides.
-11. Use the same applicator to remove perforated film pieces on the sides.
-12. Spin down plate on short cycle for about 10 seconds. Ensure that no dust accumulates on the sealed plate. Clean with fresh technical wipe if needed.
-13. Bring plate to qPCR machine and open qPCR drawer.
-14. Place plate in drawer and close.
-15. Start run on the qPCR computer or local qPCR machine screen.
+8. Place optical film over the plate. Use film applicator to press film on firmly and seal the sides.
+9. Use the same applicator to remove perforated film pieces on the sides.
+10. Spin down plate on a short cycle for about 10 seconds. Ensure that no dust accumulates on the sealed plate. Clean with fresh technical wipe if needed.
+11. Bring plate to qPCR machine and open qPCR drawer. Place plate in drawer and close.
+12. Start run on the qPCR computer or local qPCR machine screen.
 
 
 
-### Quality Control
+### Quality Control.
 
-Please specify the actions you took to confirm the quality of the PCR output, to clean up the PCR output and the equipment you used (e.g. agarose gel to confirm quality, purification of PCR products).
-
-**Standard curve**: A set of dilutions of a known concentration of the target gene gBlock are added to each qPCR plate. At least three E5 to E0.7 standards and six E0 standards are recommended. For determining limit of detection (LoD) and limit of quantification (LoQ) at least 12 replicates of each standard are recommended. The amplification measurements of these wells are compared to the unknown samples to evaluate the concentration of target in each sample. A high R<sup>2</sup> value of the standard curve indicates that the relationship between target molecule concentration and amplification is direct and quantifiable.
+**Standard curve**: A set of dilutions of a known concentration of the target gene gBlock are added to each qPCR plate. At least three E5 to E0.7 standards and six E0 standards are recommended. For determining limit of detection (LoD) and limit of quantification (LoQ) at least 24 replicates of each standard are recommended, with lower replicate numbers used for subsequent runs. The amplification measurements of these wells are compared to the unknown samples to evaluate the concentration of target in each sample. A high R<sup>2</sup> value of the standard curve indicates that the relationship between target molecule concentration and amplification is direct and quantifiable.
 
 #### Internal Positive Control
 
-An Internal Positive Control (IPC) is added to every qPCR run to help verify the success of the qPCR reaction. The primers and probe for the IPC are mixed with the target primers and probe respectively, and the E3 of IPC is added to the master mix. The IPC used is the extinct moa bird native to New Zealand, ensuring no chance of cross contamination with wild eDNA samples. Adding an IPC to each well allows for comparison across controls and samples. Samples with unexpected IPC performance (e.g. anomously high Ct values for moa assay) are likely inhibited or experienced pipetting error and reagent errors. These samples should be re run. If suspected inhibition template DNA should be either diluted to 1:10 or 1:100 concentration and/or cleaned with a commercial DNA clean up kit.
+An IPC is added to every qPCR run to help verify the success of the qPCR reaction. The primers and probe for the IPC are mixed with the target primers and probe respectively, and the E3 of IPC is added to the master mix. The IPC used is the extinct Moa bird native to New Zealand, ensuring no chance of cross contamination with eDNA samples from studied ecosystems. Adding an IPC to each well allows for comparison across controls and samples. Samples with unexpected IPC performance (e.g. anomously high Ct values for Moa assay) are likely inhibited or experienced pipetting error and reagent errors. These samples should be rerun. If there is suspected inhibition, template DNA should be either diluted to 1:10 or 1:100 concentration and/or cleaned with a commercial DNA clean up kit.
 
 
 #### Negative Controls
 
-Molecular grade water is used as a no template control (NTC) when setting up each qPCR plate. Six wells per plate are allotted to an NTC. NTCs should be run in addition to both field blanks and lab created blanks. NTCs should always be negative. If an NTC does amplify on a plate, assume contamination within the master mix or between wells and re-run the plate. If only field or extraction blanks are contaminated, not NTCs then contamination occurred prior to the qPCR reaction and suggests sterility issues in the sample collection and extraction processes.
+Molecular grade water is used as an NTC when setting up each qPCR plate. Six wells per plate are allotted to NTCs. NTCs should be run in addition to both field blanks and extraction blanks. NTCs should always be negative. If an NTC does amplify on a plate, assume contamination within the master mix or between wells and re-run the plate. If only field or extraction blanks are contaminated, not NTCs then contamination occurred prior to the qPCR reaction and suggests sterility issues in the sample collection and extraction processes.
 
 
 ### Basic Troubleshooting Guide
@@ -509,7 +505,7 @@ Solution 1:
 Issue 2: The R<sup>2</sup> value for the standard curve is low (below 98)
 
 Solution 2:
-* Low R<sup>2</sup> can be caused by inconsistent amplification of standards - this can arise from pipetting error or innacurately calculated concentrations of standard DNA in each dilution. First, rerun plate with the standards as diluted. If low R<sup>2</sup> is still observed, remake standard dilution series from scratch and rerun again.
+* Low R<sup>2</sup> can be caused by inconsistent amplification of standards - this can arise from pipetting error or innacurately calculated concentrations of standard DNA in each dilution. First, re-run plate with the standards as diluted. If low R<sup>2</sup> is still observed, remake standard dilution series from scratch and re-run again.
 
 
 Issue 3: Low amplification efficiency of standards
@@ -528,15 +524,9 @@ Solution 4:
 * Verify that all pipettes have been recently calibrated and that well-fitting tips are used
 * Improve pipetting technique by ensuring the tips are vertical during uptake and dispensing, no bubbles are aspirated into the tip, and all liquid is dispensed fully into the wells. 
 
-_______
-
-- Identify known issues associated with the procedure, if any.
-- Provide troubleshooting guidelines when available.
 
 ## REFERENCES
 
-- Insert all references cited in the document.
-- Please insert full DOI address when available, e.g. http://doi.dx.org/10.1007/s11258-014-0404-1.
 - Allison, M. J., Warren, R. L., Lopez, M. L., Acharya-Patel, N., Imbery, J. J., Coombe, L., Yang, C. L., Birol, I., & Helbing, C. C. (2023). Enabling robust environmental DNA assay design with “unikseq” for the identification of taxon-specific regions within whole mitochondrial genomes. Environmental DNA, 5, 1032–1047. https://doi.org/10.1002/edn3.438
 -  Andruszkiewicz EA, Yamahara KM, Closek CJ, Boehm AB (2020) Quantitative PCR assays to detect whales, rockfish, and common murre environmental DNA in marine water samples of the Northeastern Pacific. PLOS ONE 15(12): e0242689. https://doi.org/10.1371/journal.pone.0242689.
 - Klymus, K. E., Ruiz Ramos, D. V., Thompson, N. L., Richter, C. A. Development and Testing of Species-specific Quantitative PCR Assays for Environmental DNA Applications. J. Vis. Exp. (165), e61825, doi:10.3791/61825 (2020).
@@ -550,4 +540,3 @@ _______
 | [qPCR Controlled Vocabulary](https://docs.google.com/spreadsheets/d/1ifvyaRQVqmDaxNhM37npbPasktJANBbN9FMudXl8XL4/edit?gid=0#gid=0) | Spreadsheet detailing the naming conventions to ensure consistency |
 | [qPCR plate map template](https://docs.google.com/spreadsheets/d/1ukRsc_t9YWFYkq1ENnafxu4LBEzS9CTxfC2B7mDExac/edit?gid=292159116#gid=292159116) | Template plate map for planning and keeping track of qPCR assay runs |
 
-Link templates (e.g. preformatted spreadsheets) used to record measurements and report on the quality of the data as well as any documents such as manufacturer specifications, images, etc that support this protocol. Please include a short note describing the document's relevance.
