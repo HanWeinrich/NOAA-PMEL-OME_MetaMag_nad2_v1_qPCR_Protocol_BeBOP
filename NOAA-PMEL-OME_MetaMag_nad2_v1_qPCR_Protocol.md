@@ -279,8 +279,8 @@ For a 384-well Plate:
    
    **To create concentrated 100 µM stocks of primers and probes:**
   
-  1. Ensure the stocks of forward and reverse primer and probe are each diluted to a concentration of **100 µM** using molecular grade water and undiluted primer or probe (as it arrives from IDT). This is the storage concentration for these reagents. 
-  2. For example, if you start with 29.9 nmol of a primer, you will add 299 µL of molecular grade water to the stock tube of primer to make a 100 µM solution.
+1. Ensure the stocks of forward and reverse primer and probe are each diluted to a concentration of **100 µM** using molecular grade water and undiluted primer or probe (as it arrives from IDT). This is the storage concentration for these reagents. 
+2. For example, if you start with 29.9 nmol of a primer, you will add 299 µL of molecular grade water to the stock tube of primer to make a 100 µM solution.
 3. Once a 100 µM solution is created, it needs to be diluted down to a working stock and combined for use in all qPCR master mixes.
 
  **To create the 40 µM intermediate primer solution:**
@@ -319,11 +319,11 @@ For this protocol, you will be adding a diluted concentration of the IPC gBlock 
     * Clean the BSC and any instruments used in the target gBlock dilutions with 10% bleach followed by 70% EtOH and UV light if possible.
 
 **Example Dilution**
-* **Initial Resuspnsion** 
+* **Initial Resuspension** 
     * Length (bp): 130 bp
-    * Amount Template Delivered (ng): 250 ng
-    * Volume Suspended (µL): 250 µL
-    * Average Molecular Weight of a DNA Base Pair = 617.5 g mol<sup>-1</sup>
+    * Amount of template delivered (ng): 250 ng
+    * Volume suspended (µL): 250 µL
+    * Average molecular weight of a DNA base pair = 617.5 g mol<sup>-1</sup>
     * Avogadro constant 6.02E+23 mol<sup>-1</sup>
     * Weight per copy of fragment (g): 
         * 130 bp copy<sup>-1</sup> *(617.5 g mol<sup>-1</sup>)/(6.02E+23 mol<sup>-1</sup>) * 10<sup>9</sup> ng/g= 1.33E-10 ng copy<sup>-1</sup>
@@ -332,13 +332,13 @@ For this protocol, you will be adding a diluted concentration of the IPC gBlock 
     * Number of copies per µL suspended:
         *  1.87E+12 copies/ 25 µL = 7.50E+10 copies µL<sup>-1</sup>
 * **10<sup>8</sup> Dilution** 
-    * 100000000 final copies per µL * 2000 µL final volume /(7.50E+10 copies per µL) = 2.67 µL initial suspension to add
+    * 100,000,000 final copies per µL * 2000 µL final volume /(7.50E+10 copies per µL) = 2.67 µL initial suspension to add
     * 1,997.33 µL EB buffer
-    * 2,000 µL Total volume
+    * 2,000 µL total volume
 * **10<sup>6</sup> Dilution** 
     * 10 µL 10<sup>8</sup> dilution to add
     * 990 µL EB buffer
-    * 1,000 µL Total volume
+    * 1,000 µL total volume
 
 **Standard Curve Dilution Series**
 *   To make the standard curve series of target gBlock dilutions **(these need to be remade weekly and stored a 4 degrees C)**:
