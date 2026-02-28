@@ -23,39 +23,66 @@ license: CC0 1.0 Universal
 maturity level: Concept
 
 # FAIRe terms
+
+project_id: MetaMag-nad2-v1
+assay_name: MetaMag
 pcr_0_1: 1
-thermocycler: QuantStudio 5
-amplificationReactionVolume: 10
-assay_name: MetaMag-nad2-v1
-assay_validation: The assay was validated through a multi-step process, including in-silico analysis and in-situ trials
-targetTaxonomicAssay: MT-NAD2 of Metacarcinus magister
-targetTaxonomicScope: Metacarcinus magister
-target_gene: NAD2
+neg_cont_0_1: 1
+pos_cont_0_1: 1
+inhibition_check_0_1: 1
+inhibition_check: An internal positve control was added to each well, amplification of the IPC confirmed absence of inhibition
+thermocycler: Thermo Fisher Scientific, QuantStudio 5
+assay_type: targeted
+mod_date: 2026-02-20
+assay_validation: The assay was validated through a multi-step process, including in-silico analysis and in vitro/in-situ trials
+targetTaxonomicAssay: Metacarcinus magister
+target_gene: ND2
 ampliconSize: 126
 pcr_primer_forward: CTCCCGTTAAGTTTACTTTCTTTG
 pcr_primer_reverse: GCAGGAAGAGTAAAGGGAC
 pcr_primer_name_forward: MetaMag-nad2-v1-F
 pcr_primer_name_reverse: MetaMag-nad2-v1-R_corr
-pcr_primer_reference_forward:
-pcr_primer_vol_forward: 0.45
-pcr_primer_vol_reverse: 0.45
-pcr_primer_conc_forward: 0.45
-pcr_primer_conc_reverse: 0.45
+pcr_primer_reference_forward: 10.5281/zenodo.17991264
+pcr_primer_reference_reverse: 10.5281/zenodo.17991264
+pcr_primer_vol_forward: 0.225
+pcr_primer_vol_reverse: 0.225
+pcr_primer_conc_forward: 10
+pcr_primer_conc_reverse: 10
 probeReporter: FAM
-probeQuencher: ZEN/IBFQ
+probeQuencher: Zero-End Quencher (ZEN) + IBFQ
 probe_seq: TTGCCTCCTTTCTCAGGGTTTCTACCT
-probe_ref: not applicable
+probe_ref: 10.5281/zenodo.17991264
 probe_conc: 10
 commercial_mm: TaqMan Environmental Master Mix 2.0
-custom_mm: qPCR reactions were run in 10 uL reaction volumes, with  2 μL of DNA, 5.0 μL of TaqMan Environmental Master Mix 2.0, 0.9 μL of water, 0.9 μL Target & ICP F/R primer mix (10 µM), 0.2 μL Target & IPC probe mix (10 µM), and 1. µL of IPC E3.
-pcr_dna_vol: 1.0
+custom_mm: qPCR reactions were run in 10 μL reaction volumes, with  2 μL of DNA, 5.0 μL of TaqMan Environmental Master Mix 2.0, 0.9 μL of water, 0.9 μL Target & IPC F/R primer mix (10 µM), 0.2 μL Target & IPC probe mix (10 µM), and 1. µL of IPC E3.
+pcr_dna_vol: 2
 pcr_rep: 3
+amplificationReactionVolume: 10
 nucl_acid_amp: https://doi.org/10.5281/zenodo.17991264
 pcr_cond: denaturation:95_10;annealing:95_0.25;anealing:60_1;45
 annealingTemp: 95
 pcr_cycles: 45
 pcr_analysis_software: R | Quantstudio Design & Analysis 1 Software
-pcr_method_additional: not applicable
+pcr_method_additional: Multiplexing of target assay with an IPC
+amp_vis_method: qPCR
+detection_criteria: Calculated sample concentration above the LOQ
+lod_method: https://doi.org/10.1002/edn3.220
+pcr_assay_lod: 
+pcr_assay_lod_techreps: 24
+pcr_assay_lod_unit: copies/μL
+pcr_assay_lod_UL: 
+pcr_assay_lod_LL: 
+loq_method:  https://doi.org/10.1002/edn3.220 | 
+pcr_assay_loq_techreps: 24
+pcr_assay_loq:
+pcr_assay_loq_unit: copies/μL
+pcr_assay_loq_UL:
+pcr_assay_loq_LL:
+std_type: synthetic double-stranded DNA
+std_source: Integrated DNA Technologies
+std_seq: ATGTTCATTACCCGTTGATTGTTCTCAACAAACCACAAAGACATCGGAACCTCCCGTTAAGTTTACTTTCTTTGGGAGGGTTGCCTCCTTTCTCAGGGTTTCTACCTAAGTGGATAATGATTCAAATAATACTAACAAAAGGTTTAGTTGTCCCTTTACTCTTCCTGC
+thresholdQuantificationCycle: 
+sterilise_method: https://doi.org/10.5281/zenodo.16945434
 ---
 
 # NOAA-PMEL-OME-MetaMag_nad2_v1_qPCR_Protocol_BeBOP
@@ -100,6 +127,7 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 | NOAA PMEL OME eDNA Collection Protocol with Sterivex and Peristaltic Pump | https://doi.org/10.5281/zenodo.17655027 | 1.1.1 | 2025-11-19   | Internal      |
 | NOAA PMEL OME eDNA Collection Protocol with Sterivex and Gravity Filtration  | https://zenodo.org/records/17807045 | 1.1.0 | 2025-12-03   | Internal      |
 | NOAA PMEL OME Extraction Protocol for Sterivex Using a Centrifuge  | https://doi.org/10.5281/zenodo.17655148 | 1.1.4 | 2025-11-20   | Internal      |
+| NOAA PMEL OME Qubit Quantification Protocol  | https://doi.org/10.5281/zenodo.15627702 | 1.0.1 | 2025-11-14   | Internal      |
 
 
 
@@ -155,7 +183,7 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 | IPC | qPCR Internal Positive Control. A synthetic DNA strand or non-indigenous DNA extract mixed into the master mix to enable QA/QC of inhibition.  |
 | Moa | *Dinornis novaezealandiae*. (Owen, 1843) Extinct flightless bird native to New Zealand whose DNA sequence is being used as the IPC. GBIF taxon ID : 4852043. https://www.gbif.org/species/4852043 |
 |*Metacarcinus magister*| The assay target organism, Dungeness crab (Dana, 1852). AphiaID 440388. https://www.marinespecies.org/aphia.php?p=taxdetails&id=440388 |
-|Unknown| Samples of extacted DNA from an ecosystem, organism tissue, or other DNA source that may contain your assay target species and gene. Does not include standard curve gBlocks or positive controls.|
+|Unknown| Samples of extracted DNA from an ecosystem, organism tissue, or other DNA source that may contain your assay target species and gene. Does not include standard curve gBlocks or positive controls.|
 
 
 ## BACKGROUND
@@ -229,6 +257,9 @@ For a 384-well Plate:
 | Fridge | Refrigerator capable of reaching and maintaining 4°C | Generic | 1 | Used to store some qPCR reagents **NOTE: A separate fridge should be used to hold PCR products  from pre-amplification samples and reagents if possible.** |
 | Tip waste container | Pipette tip waste container | Generic | 1 |Sterilizable container (such as  a plastic cup or graduated 1L beaker) capable of holding waste pipette tips |
 | Trash Container | Plastic cup/container for trash | Generic | 1 |Container capable of holding any experiment waste in the BSC. Needs to be able to be sterilized. Can be substituted with a trash bag and stand. |
+| Qubit| Qubit 4 Fluorometer | Invitrogen | 1| Can be substituted with different Qubit model.|
+|0.5 mL tube rack|96-Well Flipper™ Microtube Racks |Fisher Scientific | 3 |Can be substituted with generic, must fit 0.5 mL tubes.|
+| Qubit tubes | Qubit™ Assay Tubes 500 μL | Invitrogen |98 | Must be qubit specific. |
 | **Consumable equipment** |
 | 384 well plate | MicroAmp Optical 384-Well Reaction Plate with Barcode | Applied Biosystems/Thermo Fisher | 1 | Can be substituted with generic. Shield from **UV exposure** to prevent yellowing (therefore damaging optical properties) |
 | 96 well plate | Twin.tec LoBind PCR plates, semi-skirted (96-wells) | Eppendorf | 1 | Can be substituted with generic - must be DNA low retention |
@@ -316,6 +347,7 @@ For this protocol, you will be adding a diluted concentration of the IPC gBlock 
 
 *  Be sure to version each dilution of assay target  and IPC when they are recreated weekly (V1, V2, etc.) to record the performance of each batch.
 *   For the IPC, you will only need to make down to E3 (1000 copies per microliter) for inclusion in master mix.
+*   You will use the Qubit or similar fluorometer to quantify your 10 ng/µL dilution (see linked sheet for details).
 *   When diluting the assay target gBlocks, take steps to reduce possible contamination.
     * Dilute target gBlocks after working with other reagents, not before.
     * Clean the BSC and any instruments used in the target gBlock dilutions with 10% bleach followed by 70% EtOH and UV light if possible.
@@ -333,10 +365,16 @@ For this protocol, you will be adding a diluted concentration of the IPC gBlock 
         * 250 ng / 1.33E-10 ng copy<sup>-1</sup> = 1.87E+12 copies
     * Number of copies per µL suspended:
         *  1.87E+12 copies/ 25 µL = 7.50E+10 copies µL<sup>-1</sup>
+        
+This dilution should then be quantified using the Qubit or similar to ensure it is 10 ng/µL. Qubit 3x and take the average for greater confidence in results.
+   
 * **10<sup>8</sup> Dilution** 
     * 100,000,000 final copies per µL * 2000 µL final volume /(7.50E+10 copies per µL) = 2.67 µL initial suspension to add
     * 1,997.33 µL EB buffer
     * 2,000 µL total volume
+
+This dilution should then be quantified using the Qubit or similar to ensure it is ~0.133 ng/µL. Qubit 3x using 5 µL for each replicate and take the average for greater confidence in results.
+ 
 * **10<sup>6</sup> Dilution** 
     * 10 µL 10<sup>8</sup> dilution to add
     * 990 µL EB buffer
