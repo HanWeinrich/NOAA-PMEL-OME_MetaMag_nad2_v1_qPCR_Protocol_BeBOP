@@ -76,8 +76,8 @@ loq_method: https://doi.org/10.3791/61825
 pcr_assay_loq_techreps: 3
 pcr_assay_loq: 94
 pcr_assay_loq_unit: copies/μL
-pcr_assay_loq_UL: missing: not collected
-pcr_assay_loq_LL: missing: not collected
+pcr_assay_loq_UL: missing not collected
+pcr_assay_loq_LL: missing not collected
 elowquant_lod_method: https://doi.org/10.1002/edn3.220
 elowquant_pcr_assay_lod_techreps: 3
 elowquant_pcr_assay_lod: 0.432
