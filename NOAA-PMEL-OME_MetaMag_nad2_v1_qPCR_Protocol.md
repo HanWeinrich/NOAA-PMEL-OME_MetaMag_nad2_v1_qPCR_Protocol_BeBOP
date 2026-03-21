@@ -15,7 +15,7 @@ skills_required: sterile technique, pipetting skills, standard molecular techniq
 time_required: 270
 personnel_required: 1
 language: en
-issued: 2026-03-18
+issued: 2026-03-20
 audience: scientists
 publisher: NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Group; University of Washington Cooperative Institute for Climate, Ocean, & Ecosystem Studies
 hasVersion: 1.0.1
@@ -33,7 +33,7 @@ inhibition_check_0_1: 1
 inhibition_check: An internal positve control was added to each well, amplification of the IPC confirmed absence of inhibition
 thermocycler: Thermo Fisher Scientific, QuantStudio 5
 assay_type: targeted
-mod_date: 2026-03-18
+mod_date: 2026-03-20
 assay_validation: The assay was validated through a multi-step process, including in-silico analysis and in vitro/in-situ trials
 targetTaxonomicAssay: Metacarcinus magister
 target_gene: ND2
@@ -76,8 +76,8 @@ loq_method: https://doi.org/10.3791/61825
 pcr_assay_loq_techreps: 3
 pcr_assay_loq: 94
 pcr_assay_loq_unit: copies/μL
-pcr_assay_loq_UL: NA
-pcr_assay_loq_LL: NA
+pcr_assay_loq_UL: missing: not collected
+pcr_assay_loq_LL: missing: not collected
 elowquant_lod_method: https://doi.org/10.1002/edn3.220
 elowquant_pcr_assay_lod_techreps: 3
 elowquant_pcr_assay_lod: 0.432
@@ -93,8 +93,8 @@ elowquant_pcr_assay_loq_LL: 0.751
 std_type: synthetic double-stranded DNA
 std_source: Integrated DNA Technologies
 std_seq: ATGTTCATTACCCGTTGATTGTTCTCAACAAACCACAAAGACATCGGAACCTCCCGTTAAGTTTACTTTCTTTGGGAGGGTTGCCTCCTTTCTCAGGGTTTCTACCTAAGTGGATAATGATTCAAATAATACTAACAAAAGGTTTAGTTGTCCCTTTACTCTTCCTGC
-thresholdQuantificationCycle: TBD
-estimatedNumberOfCopies_method: TBD
+thresholdQuantificationCycle: 40
+estimatedNumberOfCopies_method: Ct/Cq with standard curve
 sterilise_method: https://doi.org/10.5281/zenodo.16945434
 ---
 
@@ -154,7 +154,7 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2025-12-19 | Initial release |
-| 1.0.1 | 2026-03-18 | Corrected typos, grammar, improved clarity. This version was used for the development of the MetaMag_nad2_v1 assay. |
+| 1.0.1 | 2026-03-20 | Corrected typos, grammar, improved clarity. This version was used for the development of the MetaMag_nad2_v1 assay. |
 
 
 ### Acronyms and Abbreviations
