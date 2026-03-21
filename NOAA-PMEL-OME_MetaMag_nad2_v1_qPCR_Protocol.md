@@ -18,7 +18,7 @@ language: en
 issued: 2026-03-20
 audience: scientists
 publisher: NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Group; University of Washington Cooperative Institute for Climate, Ocean, & Ecosystem Studies
-hasVersion: 1.0.1
+hasVersion: 1.1.0
 license: CC0 1.0 Universal
 maturity level: Concept
 
@@ -154,7 +154,7 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2025-12-19 | Initial release |
-| 1.0.1 | 2026-03-20 | Corrected typos, grammar, improved clarity. This version was used for the development of the MetaMag_nad2_v1 assay. |
+| 1.1.0 | 2026-03-20 | Added FAIRe terms. Updated Moa species name. Corrected typos, grammar, improved clarity. This version was used for the development of the MetaMag_nad2_v1 assay. |
 
 
 ### Acronyms and Abbreviations
