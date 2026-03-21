@@ -254,7 +254,6 @@ For a 384-well Plate:
 | DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | **Durable equipment** |
-| Voyager Adjustable tip spacing pipetter: 0.5-12.5 μl | 	Voyager 12 Tip | Integra Biosciences | 1 | Can be substituted with any accurate multichannel pipettor |
 | Pipetter: 1-10 μl | 	Pipetman P10L | Gilson | 1 | Can be substituted with any accurate pipettor |
 | Pipetter: 10 - 100 μL | Pipetman P100L | Gilson | 1 | Can be substituted with any accurate pipettor |
 | Pipetter: 20 - 200 μL | Pipetman P200L | Gilson | 1 | Can be substituted with any accurate pipettor |
@@ -295,7 +294,7 @@ For a 384-well Plate:
 |8 well tube strips|Eppendorf 0.2 mL PCR Tube Strips | Eppendorf| 2| Can be replaced with generic, must be sterile|
 | **Optional equipment** |
 | 8-channel multichannel pipetter: 1-10 μL | Pipetman Multichannel P8X10 | Gilson | 1 | Can be substituted with generic - not required but reduces protocol time and error rate. |
-| Voyager 8-channel adjustable pipette | Voyager 8 channel 0.5-12.5 µl | Integra | 1 | Can be substituted with generic - not required but reduces protocol time and error rate. |
+| Voyager Adjustable tip spacing pipetter: 0.5-12.5 μl | Voyager 8 channel 0.5-12.5 µl| Integra Biosciences | 1 | Can be substituted with generic - not required but reduces protocol time and error rate. |
 | 12.5 µl pipette tips | GRIPTIPS sterile, filter 12.5 µl tips | Integra | 392 | Can be substituted with generic - must be sterile and filtered, must fit 8 channel pipette. |
 | **Chemicals** |
 | TaqMan EMM | TaqMan Environmental Master Mix 2.0 | Applied Biosystems | 2000 µl | Store at 4ºC after opening |
