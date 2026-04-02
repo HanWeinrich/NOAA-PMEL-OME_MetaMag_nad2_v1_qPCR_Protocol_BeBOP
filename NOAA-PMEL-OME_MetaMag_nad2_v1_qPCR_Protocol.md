@@ -15,10 +15,10 @@ skills_required: sterile technique, pipetting skills, standard molecular techniq
 time_required: 270
 personnel_required: 1
 language: en
-issued: 2026-03-20
+issued: 2026-04-02
 audience: scientists
 publisher: NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Group; University of Washington Cooperative Institute for Climate, Ocean, & Ecosystem Studies
-hasVersion: 1.1.0
+hasVersion: 1.2.0
 license: CC0 1.0 Universal
 maturity level: Concept
 
@@ -33,7 +33,7 @@ inhibition_check_0_1: 1
 inhibition_check: An internal positve control was added to each well, amplification of the IPC confirmed absence of inhibition
 thermocycler: Thermo Fisher Scientific, QuantStudio 5
 assay_type: targeted
-mod_date: 2026-03-20
+mod_date: 2026-04-02
 assay_validation: The assay was validated through a multi-step process, including in-silico analysis and in vitro/in-situ trials
 targetTaxonomicAssay: Metacarcinus magister
 target_gene: ND2
@@ -65,7 +65,7 @@ pcr_cycles: 45
 pcr_analysis_software: R | Quantstudio Design & Analysis 1 Software
 pcr_method_additional: Multiplexing of target assay with an IPC
 amp_vis_method: qPCR
-detection_criteria: Calculated sample concentration above the LOQ
+detection_criteria: Calculated sample concentration above the LOD for at least one replicate
 lod_method: https://doi.org/10.3791/61825
 pcr_assay_lod: 0.2992
 pcr_assay_lod_techreps: 3
@@ -74,10 +74,10 @@ pcr_assay_lod_UL: 0.465
 pcr_assay_lod_LL: 0.084
 loq_method: https://doi.org/10.3791/61825
 pcr_assay_loq_techreps: 3
-pcr_assay_loq: 94
+pcr_assay_loq: 67.54
 pcr_assay_loq_unit: copies/μL
-pcr_assay_loq_UL: missing not collected
-pcr_assay_loq_LL: missing not collected
+pcr_assay_loq_UL: 100
+pcr_assay_loq_LL: 10
 elowquant_lod_method: https://doi.org/10.1002/edn3.220
 elowquant_pcr_assay_lod_techreps: 3
 elowquant_pcr_assay_lod: 0.432
@@ -154,7 +154,8 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2025-12-19 | Initial release |
-| 1.1.0 | 2026-03-20 | Added FAIRe terms. Updated Moa species name. Corrected typos, grammar, improved clarity. This version was used for the development of the MetaMag_nad2_v1 assay. |
+| 1.1.0 | 2026-03-20 | Added FAIRe terms. Updated Moa species name. Corrected typos, grammar, improved clarity. |
+| 1.2.0 | 2026-04-02| Recalculated LOQ. This version was used for the development of the MetaMag_nad2_v1 assay. |
 
 
 ### Acronyms and Abbreviations
