@@ -509,7 +509,7 @@ NOTE: When loading the qPCR plate, **take care to not contaminate** unknown (env
 2.  Load 2 µl of sample in each unknown sample well according to the plate map.
 * Highly recommended to use a multichannel pipette to load.
     - If using voyager pipette:
-        - Use pipet/mix setting to aspirate 2 µl, dispense 2 µl, and then mix 8 µl for 3 repetitions, ensuring pipette is heald steady while mixing occurs. Discard tips after each use.
+        - Use pipet/mix setting to aspirate 2 µl, dispense 2 µl, and then mix 8 µl for 3 repetitions, ensuring pipette is held steady while mixing occurs. Discard tips after each use.
         - Use 13 mm setting for aspirating and use 4 mm for dispensing.
         - Load batches of fewer than 8 samples with either fewer tips or a single channel pipette.
 
@@ -518,8 +518,8 @@ NOTE: When loading the qPCR plate, **take care to not contaminate** unknown (env
 5.    Now you can take your gBlock target standards out of the fridge and place in the BSC.
 6.    Using a 200 µl pipette, aliquot your standard dilution series (1 of each of E5, E4, E3, E2, E1, E0.7, E0, E0) into an 8 well strip tube. 2 wells will be dedicated to the E0 concentration, as you want twice as many E0 as higher concentration standards to reduce stochastic error. **Minimum of 3x E5 to E0.7 standards and 6x E0 standards recommended**.
 7.    Load all standards using the multichannel to reduce pipetting error.
-    * If using voyager pipette (for a max of 6 replicates at a time):
-        - Use pipet/mix setting to aspirate 2 µl, dispense 2 µl, and then mix 8 µl for 3 repetitions, ensuring pipette is heald steady while mixing occurs. Discard tips after each use.
+    * If using voyager pipette:
+        - Use pipet/mix setting to aspirate 2 µl, dispense 2 µl, and then mix 8 µl for 3 repetitions, ensuring pipette is held steady while mixing occurs. Discard tips after each use.
         - Use 13 mm setting for aspirating and use 4 mm for dispensing.
         - Load batches of fewer than 8 samples with either fewer tips or a single channel pipette.
 8. Place optical film over the plate. Use film applicator to press film on firmly and seal the sides.
