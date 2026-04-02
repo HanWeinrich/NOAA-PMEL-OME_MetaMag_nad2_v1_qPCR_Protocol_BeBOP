@@ -18,7 +18,7 @@ language: en
 issued: 2026-04-02
 audience: scientists
 publisher: NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Group; University of Washington Cooperative Institute for Climate, Ocean, & Ecosystem Studies
-hasVersion: 1.2.0
+hasVersion: 1.3.0
 license: CC0 1.0 Universal
 maturity level: Concept
 
@@ -156,6 +156,7 @@ This protocol was modified and adapted from Ramón-Laca et al. 2021 https://doi.
 | 1.0.0 | 2025-12-19 | Initial release |
 | 1.1.0 | 2026-03-20 | Added FAIRe terms. Updated Moa species name. Corrected typos, grammar, improved clarity. |
 | 1.2.0 | 2026-04-02| Recalculated LOQ. This version was used for the development of the MetaMag_nad2_v1 assay. |
+| 1.3.0 | 2026-04-02| Updated to reflect current protocol for using Voyager pipette. |
 
 
 ### Acronyms and Abbreviations
@@ -508,11 +509,9 @@ NOTE: When loading the qPCR plate, **take care to not contaminate** unknown (env
 2.  Load 2 µl of sample in each unknown sample well according to the plate map.
 * Highly recommended to use a multichannel pipette to load.
     - If using voyager pipette:
-        - Use repeat pipetting setting to aspirate 7 µl, dispense 2 µl, and leave 1 µl or 0.5 µl in tips (post dispense). Set this to repeat 3 times before purging (to fill all three wells of your triplicates).
+        - Use pipet/mix setting to aspirate 2 µl, dispense 2 µl, and then mix 8 µl for 3 repetitions, ensuring pipette is heald steady while mixing occurs. Discard tips after each use.
         - Use 13 mm setting for aspirating and use 4 mm for dispensing.
-        - If tips keep causing bubbles, dispose of tips and get a new set.
         - Load batches of fewer than 8 samples with either fewer tips or a single channel pipette.
-        - Be sure to discard tips between samples (but not between replicates of the same sample unless tips are otherwise compromised).
 
 3. Once samples are loaded, load the NTC wells with 2 µl of molecular grade water.
 4.  Remove all samples from the BSC to prevent cross contamination.
@@ -520,11 +519,9 @@ NOTE: When loading the qPCR plate, **take care to not contaminate** unknown (env
 6.    Using a 200 µl pipette, aliquot your standard dilution series (1 of each of E5, E4, E3, E2, E1, E0.7, E0, E0) into an 8 well strip tube. 2 wells will be dedicated to the E0 concentration, as you want twice as many E0 as higher concentration standards to reduce stochastic error. **Minimum of 3x E5 to E0.7 standards and 6x E0 standards recommended**.
 7.    Load all standards using the multichannel to reduce pipetting error.
     * If using voyager pipette (for a max of 6 replicates at a time):
-    - Use repeat pipetting setting to aspirate 12.5 µl, dispense 2 µl, and leave 0.5 µl in tips.
-    - Use 13 mm setting for aspirating, and use 4 mm for dispensing 
-        - If tips keep causing bubbles, dispose of tips and get a new set.
-        Load smaller sets or single wells with a 10 µl single channel pipette or pick up fewer tips with the Integra Voyager.
-        - Be sure to discard tips between standards.
+        - Use pipet/mix setting to aspirate 2 µl, dispense 2 µl, and then mix 8 µl for 3 repetitions, ensuring pipette is heald steady while mixing occurs. Discard tips after each use.
+        - Use 13 mm setting for aspirating and use 4 mm for dispensing.
+        - Load batches of fewer than 8 samples with either fewer tips or a single channel pipette.
 8. Place optical film over the plate. Use film applicator to press film on firmly and seal the sides.
 9. Use the same applicator to remove perforated film pieces on the sides.
 10. Spin down plate on a short cycle for about 10 seconds. Ensure that no dust accumulates on the sealed plate. Clean with fresh technical wipe if needed.
