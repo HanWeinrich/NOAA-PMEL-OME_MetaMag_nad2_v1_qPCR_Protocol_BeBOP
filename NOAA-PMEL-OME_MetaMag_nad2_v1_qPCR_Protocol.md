@@ -397,7 +397,7 @@ This dilution should then be quantified using the Qubit or similar to ensure it 
     * 990 µL EB buffer
     * 1,000 µL total volume
 
-**Standard Curve Dilution Series**
+**Minimum Standard Curve Dilution Series**
 *   To make the standard curve series of target gBlock dilutions **(these need to be remade weekly and stored at 4°C)**:
 
     | Copies/µL | Concentration | Recipe |
@@ -409,6 +409,22 @@ This dilution should then be quantified using the Qubit or similar to ensure it 
     | 10 | E1 | 100 µL of E2 + 900 µL EB |
     | 5 | E0.7 |500 µL of E1 + 500 µL EB |
     | 1 | E0 |100 µL of E1 + 900 µL EB |
+    
+**LoD/LoQ Standard Curve Dilution Series**
+*   To make the standard curve series of target gBlock dilutions **(these need to be remade weekly and stored at 4°C)**:
+
+    | Copies/µL | Concentration | Recipe |
+    | ----- | ----- | ----- |
+    | 100,000 | E5 | 100 µL of E6 + 900 µL EB |
+    | 10,000 | E4 | 100 µL of E5 + 900 µL EB |
+    | 1,000 | E3 | 100 µL of E4 + 900 µL EB |
+    | 100 | E2 | 100 µL of E3 + 900 µL EB |
+    | 10 | E1 | 100 µL of E2 + 900 µL EB |
+    | 5 | E0.7 |150 µL of E1 + 150 µL EB |
+    | 2.5 | E0.4 |100 µL of E1 + 400 µL EB |
+    | 1 | E0 |100 µL of E1 + 900 µL EB |
+    | 0.8 | E-0.1 |100 µL of E1 + 1150 µL EB |
+    | 0.4 | E-0.5 |50 µL of E1 + 1200 µL EB |
     
 **IPC Dilution Series**
 *   To make the standard curve series of target gBlock dilutions **(these need to be remade weekly and stored at 4°C)**:
@@ -516,17 +532,23 @@ NOTE: When loading the qPCR plate, **take care to not contaminate** unknown (env
 3. Once samples are loaded, load the NTC wells with 2 µl of molecular grade water.
 4.  Remove all samples from the BSC to prevent cross contamination.
 5.    Now you can take your gBlock target standards out of the fridge and place in the BSC.
-6.    Using a 200 µl pipette, aliquot your standard dilution series (1 of each of E5, E4, E3, E2, E1, E0.7, E0, E0) into an 8 well strip tube. 2 wells will be dedicated to the E0 concentration, as you want twice as many E0 as higher concentration standards to reduce stochastic error. **Minimum of 3x E5 to E0.7 standards and 6x E0 standards recommended**.
-7.    Load all standards using the multichannel to reduce pipetting error.
+6.    Using a 200 µl pipette, aliquot your standard dilution series (1 of each of E5, E4, E3, E2, E1, E0.7, E0, E0) into an 8 well strip tube. 2 wells will be dedicated to the E0 concentration, as you want twice as many E0 as higher concentration standards to reduce stochastic error.
+        - **Minimum Recommended Standards**: 
+            - 3x E5 to E0.7 standards and 6x E0 standards.
+        - **NOAA OME Preffered Operational Standards**: 
+            - 8x E5 to E0.7 standards and 16x E0 standards**.
+        - **NOAA OME Preffered LOD/LOQ Standards**: 
+            - 24x E5 to E-0.5 standards**.
+8.    Load all standards using the multichannel to reduce pipetting error.
     * If using voyager pipette:
         - Use pipet/mix setting to aspirate 2 µl, dispense 2 µl, and then mix 8 µl for 3 repetitions, ensuring pipette is held steady while mixing occurs. Discard tips after each use.
         - Use 13 mm setting for aspirating and use 4 mm for dispensing.
         - Load batches of fewer than 8 samples with either fewer tips or a single channel pipette.
-8. Place optical film over the plate. Use film applicator to press film on firmly and seal the sides.
-9. Use the same applicator to remove perforated film pieces on the sides.
-10. Spin down plate on a short cycle for about 10 seconds. Ensure that no dust accumulates on the sealed plate. Clean with fresh technical wipe if needed.
-11. Bring plate to qPCR machine and open qPCR drawer. Place plate in drawer and close.
-12. Start run on the qPCR computer or local qPCR machine screen.
+9. Place optical film over the plate. Use film applicator to press film on firmly and seal the sides.
+10. Use the same applicator to remove perforated film pieces on the sides.
+11. Spin down plate on a short cycle for about 10 seconds. Ensure that no dust accumulates on the sealed plate. Clean with fresh technical wipe if needed.
+12. Bring plate to qPCR machine and open qPCR drawer. Place plate in drawer and close.
+13. Start run on the qPCR computer or local qPCR machine screen.
 
 
 
